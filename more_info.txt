@@ -65,5 +65,18 @@ Build steps:
 
 	Gradle Tasks:
 	
-		build:clean then build:bootWar
+		build:clean
+		build:bootWar
+			
 			to build the application to run on an external Tomcat application server.
+			
+	Load the WAR file in the Tomcat server:
+		Move the <project>/build/libs/SpringBootThymeLeafForm-0.0.1-SNAPSHOT.war  file
+	
+			to <Tomcat installation>/webapps  directory
+		
+			The server should automatically pick up the changes, if configured that way and server is running.
+			
+		or go into the console
+		
+		
